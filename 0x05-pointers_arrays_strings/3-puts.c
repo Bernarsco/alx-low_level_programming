@@ -1,14 +1,20 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- *  _puts - prints a string
- *  @str: string to be printed
+ * _puts - prints a string
+ * @str: string to be printed
+ *
+ * Description: prints a string
+ * On success: returns no error
  */
-void  _puts(char *str)
+void _puts(char *str);
 {
-	while (*str != '\0')
-	{
-		_putchar('*'str '*''*');
-	}
-	_putchar('\n');
+int i = 0;
+while (*(str + i) != '\0')
+{
+putchar(*(str + i));
+i++;
+}
+putchar(10);
 }
